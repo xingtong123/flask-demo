@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    66666666
+</h1>
+<h4>
+    <h5>加载到了图片笔筒.png</h5>
+    <img src="../static/img/笔筒.png" alt="">
+</h4>
+
+<script src="../static/js/socket.io.js"></script>
+<script>
+    // 接收广播数据
+    var windw_socket = null;
+    var socket_b = io.connect("https://asx-demo-api.defi.wiki/local_banka/workflow", {transports: ['websocket']});
+    // var socket_b = io.connect("ws://127.0.0.1:3333/asx/workflow", {transports: ['websocket']});
+    console.log("加载到了socketio", socket_b)
+</script>
+</body>
+</html>
